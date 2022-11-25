@@ -1,7 +1,17 @@
 # Bash_Script
 Usage chmod u+x useradd_del.sh
-./useradd_del.sh user1 OR user{1...5} etc.
-user1 user added to your sistem.
-./useradd_del.sh user1
-user1 user already in your system, Delete y/n: 
-user1 user deleted.
+
+[root@node1 Bash_Script]# ./useradd_del.sh bob anna joe
+bob user added to your sistem.
+anna user added to your sistem.
+joe user added to your sistem.
+
+[root@node1 Bash_Script]# ./useradd_del.sh bob anna joe
+bob user already in your system, Delete y/n: y
+bob user deleted.
+anna user already in your system, Delete y/n: y
+anna user deleted.
+joe user already in your system, Delete y/n: n
+joe user not-deleted.
+
+
