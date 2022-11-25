@@ -7,4 +7,5 @@
 
 # Editor.md
 
-![] (https://github.com/chsnv/Bash_Script/blob/main/img/pngegg.png)
+![](https://github.com/chsnv/Bash_Script/blob/main/img/pngegg.png)
+![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
