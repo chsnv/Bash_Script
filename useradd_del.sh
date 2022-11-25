@@ -1,5 +1,5 @@
 #!/bin/bash
-for i in $1; do
+for i in $@; do
     if grep -q $i /etc/passwd; then
     read -p "$i user already in your system, Delete y/n: " n
     case $n in 
