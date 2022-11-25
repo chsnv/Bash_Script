@@ -10,4 +10,4 @@
 
 
 
- [Heading link](https://github.com/pandao/editor.md "Heading link") #Bash Script
+ [sa](https://github.com/chsnv/Bash_Script/blob/main/scripts/useradd_del.sh "Heading link") #Bash Script
