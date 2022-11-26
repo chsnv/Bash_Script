@@ -1,19 +1,19 @@
 #!/bin/bash
 for i in $@; do
-    if grep -q $i /etc/passwd; then
-    read -p "$i user already in your system, Delete y/n: " n
+#set -x
+    if grep -q $i /etc/passwd; then 
+    getent passwd $@ 
+ read -p "Delete $i y/n: " n
     case $n in 
     y)
-      userdel -r $i;
-      echo "$i user deleted.";;
+      userdel -r $i;;
     n)
-      echo "$i user not-deleted.";;
+      echo "$i not deleted";; 
     *)
-      echo "You've to choose y/n option.";;
+      echo "Try Again.";;
     esac  
-    
     else
         useradd $i;
-        echo "$i user added to your sistem."
+        echo "$i user added"
      fi            
 done
